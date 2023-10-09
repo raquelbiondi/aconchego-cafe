@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Aconchego</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Café Aconchego</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-cafeteria" class="nav-link">
+                            <i class="bi bi-cup-hot-fill"></i>
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+
+        <section id="sobre-a-cafeteria">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="imagens/cafeteria-por-dentro.jpg" alt="foto do espaço interno da cafeteria">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/espaco-externo.jpg" alt="balcao da cafeteria">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/preparando-pedido.jpg" alt="bastidores de preparo do café">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="imagens/balcao-cafeteria.jpg" class="d-block w-100 rounded" alt="Foto espaço interno do restaurante">
+                    </div>
+                    <div class="col-md-6 mt-3 mt-md-0">
+                        <h3 class="section-title">Sobre <span class="text-colored">a cafeteria</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dicta repellendus inventore assumenda praesentium aspernatur quas. Cupiditate provident mollitia placeat aspernatur, praesentium nemo ratione ex, natus quo optio consectetur.
+                        </p>
+                        <h4 class="section-title">Um espaço <span class="text-colored">pet-friendly</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique libero amet ratione laudantium, nobis molestias. Sed, nesciunt illum nam error omnis impedit explicabo est, numquam, architecto accusamus accusantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique libero amet ratione laudantium, nobis molestias. Sed, nesciunt illum nam error omnis impedit explicabo est, numquam, architecto accusamus accusantium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cardapio" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center mb-5">
+                    Nosso <span class="text-colored">cardápio</span>
+                </h2>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-cardapio"><!--nav-pills faz com que tenha uma aparência de botão-->
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-quentes" class="fw-bold text-start nav-link text-colored active" id="btn-menu">Bebidas quentes</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-geladas" class="fw-bold text-start nav-link text-colored" id="btn-menu">Bebidas geladas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#salgados" class="fw-bold text-start nav-link text-colored" id="btn-menu">Salgados</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#doces" class="fw-bold text-start nav-link text-colored" id="btn-menu">Doces</button>
+                    </nav>
+                </aside>
+    
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bebidas-quentes">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas quentes/moccha.jpg" alt="café moccha">
+                                    <h5 class="text-colored fw-bold mt-2">Café moccha</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas quentes/cappuccino.jpg" alt="cappuccino">
+                                    <h5 class="text-colored fw-bold mt-2">Cappuccino</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas quentes/matcha.jpg" alt="matcha latte">
+                                    <h5 class="text-colored fw-bold mt-2">Matcha</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas quentes/chocolate-quente.jpg" alt="chocolate quente">
+                                    <h5 class="text-colored fw-bold mt-2">Chocolate quente</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas quentes/expresso.jpg" alt="café expresso">
+                                    <h5 class="text-colored fw-bold mt-2">Café expresso</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="bebidas-geladas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas geladas/cafe-gelado.jpg" alt="iced coffee">
+                                    <h5 class="text-colored fw-bold mt-2">Iced coffee</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas geladas/latte-gelado.jpg" alt="iced latte">
+                                    <h5 class="text-colored fw-bold mt-2">Iced latte</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas geladas/vanilla-iced.jpg" alt="iced vanilla">
+                                    <h5 class="text-colored fw-bold mt-2">Iced vanilla</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas geladas/iced-matcha.jpg" alt="iced matcha">
+                                    <h5 class="text-colored fw-bold mt-2">Iced matcha</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/bebidas geladas/chocolate-iced.jpg" alt="iced chocolate">
+                                    <h5 class="text-colored fw-bold mt-2">Iced chocolate</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="salgados">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/toasts/toast1.jpg" alt="toast">
+                                    <h5 class="text-colored fw-bold mt-2">Toast</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/toasts/toast2.jpg" alt="toast">
+                                    <h5 class="text-colored fw-bold mt-2">Toast</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/toasts/toast3.jpg" alt="toast">
+                                    <h5 class="text-colored fw-bold mt-2">Toast</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="doces">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/doces/bolo1.jpg" alt="fatia de bolo">
+                                    <h5 class="text-colored fw-bold mt-2">Bolo de coco</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/doces/bolo2.jpg" alt="fatia de bolo">
+                                    <h5 class="text-colored fw-bold mt-2">Bolo de chocolate com cobertura limão</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/doces/bolo-recheado.jpg" alt="fatia de bolo recheado">
+                                    <h5 class="text-colored fw-bold mt-2">Bolo recheado</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/doces/croissant-doce.jpg" alt="croissant doce">
+                                    <h5 class="text-colored fw-bold mt-2">Croissant doce</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="imagens/doces/torta-maça.jpg" alt="tortinha de maçã">
+                                    <h5 class="text-colored fw-bold mt-2">Tortinha de maçã</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div> 
+    </section>
+
+     <section id="fale-conosco" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço</h3>
+                            <p>
+                                Rua Pedretti Eve, nº 77, Bairro Flor da Lua - São Paulo/SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
